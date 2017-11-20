@@ -5,3 +5,5 @@ def my_each(arr)
     counter += 1
   end
 end
+
+my_each {|el| puts el}
