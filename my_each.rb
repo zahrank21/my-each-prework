@@ -1,7 +1,8 @@
 def my_each(arr)
-  arr.each do |el|
-    yield(el)
+  counter = 0 
+  while counter < arr.length
+    yield(arr[counter])
+    counter += 1
   end
 end
 
-my_each(arr) {|el| puts el}
